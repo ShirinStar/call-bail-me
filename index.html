@@ -26,13 +26,14 @@
 <body>
 
   <div class="homePage">
+    <div class="textHome">
     <h1 class="call">CALL</h1>
     <h1 class="bail">BAIL</h1>
     <h1 class="me">ME</h1>
-    <p class='homeInstruction' >to work best in real time please-></p>
+  </div>
+  <p class='homeInstruction' >to work best </br> in real time please</p>
     <button class="download">Install Locally</button>
   </div>
-
 
   <h1 class="logo">CALLBAIL.ME</h1>
 
@@ -55,7 +56,7 @@
       <input type="text" class="search" placeholder="Type City or State">
     </form>
     <div class="suggestions"></div>
-    <button class="next">next</button>
+    <!-- <button class="next">next</button> -->
   </div>
 
   <div class='thirdPage'>
@@ -95,36 +96,20 @@
     download.addEventListener('click', function () {
       firstPage.style.display = "block";
       logo.style.display = "block";
-      secondPage.style.display = "none";
       homePage.style.display = "none";
-      thirdPage.style.display = "none";
     })
 
     start.addEventListener('click', function () {
       firstPage.style.display = "none";
-      homePage.style.display = "none";
       secondPage.style.display = "block";
-      thirdPage.style.display = "none";
-    })
-
-    start.addEventListener('click', function () {
-      firstPage.style.display = "none";
-      homePage.style.display = "none";
-      secondPage.style.display = "block";
-      thirdPage.style.display = "none";
     })
 
     next.addEventListener('click', function () {
-      firstPage.style.display = "none";
-      homePage.style.display = "none";
       secondPage.style.display = "none";
       thirdPage.style.display = "block";
     })
 
     done.addEventListener('click', function () {
-      firstPage.style.display = "none";
-      homePage.style.display = "none";
-      secondPage.style.display = "none";
       thirdPage.style.display = "none";
       final.style.display = "block";
     })

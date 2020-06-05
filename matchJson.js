@@ -24,10 +24,10 @@ function displayMatches(e) {
     const stateName = fund.state.replace(regex, `<span class="hl">${this.value}</span>`)
     return `
     <p class='listResults'>
-      <span class='name'>${cityName}, ${stateName},</br> </span>
-      <span class='name'>${fund.name}: </span>
+      <span class='place'>${cityName}, ${stateName}:</br> </span>
+      <button class='selectFundBtn' value="${fund.id}">${fund.name} - 
       <a class='phone' href="${fund.number}">${fund.number}</a>
-      <button value="${fund.id}">Click to Select this Fund</button>
+      </button>
     </p>
     `
   }).join('');
@@ -38,15 +38,23 @@ function displayMatches(e) {
 
 const search = document.querySelector('.search')
 const suggestions = document.querySelector('.suggestions');
+
+search.addEventListener("input", displayMatches);
+
 suggestions.addEventListener('click', e => {
+  const thirdPage = document.querySelector('.thirdPage');
+  const secondPage = document.querySelector('.secondPage');
+
   if (e.target.tagName == 'BUTTON') {
     const id = parseInt(e.target.value);
     const fund = funds.find(currentFund => currentFund.id === id);
     handleFundSelection(fund);
+    secondPage.style.display = "none";
+    thirdPage.style.display = "block";
   }
 })
 function handleFundSelection(fund) {
   selectedFund = fund.id;
   console.log('the selected fund is: ', fund.id);
 }
-search.addEventListener("input", displayMatches);
+
