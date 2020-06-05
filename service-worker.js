@@ -3,8 +3,10 @@ console.log('yay');
 const precacheResources = [
   '/',
   'index.html',
+  'matchJson.js',
+  'phones.json',
   'style.css',
-  'https://draketalley.com/caller/manifest.json'
+  'manifest.json'
 ];
 
 self.addEventListener('install', event => {
