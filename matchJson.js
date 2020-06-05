@@ -31,9 +31,7 @@ function displayMatches(e) {
     </p>
     `
   }).join('');
-
   suggestions.innerHTML = html;
-
 }
 
 const search = document.querySelector('.search')

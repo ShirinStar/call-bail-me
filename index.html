@@ -43,8 +43,8 @@
     <h4 class='instruction'> You will be able to SMS with detailed information of your last location and time saw, or
       make a quick call with the click of a button. </h4>
     <h5 class="secInstruction">You need to: </br>
-      1) find the bail fund neer you by location.</br>
-      2) mark a contact emergency from your personal contacts you would like to SMS if something gets wrong.</h5>
+      1) find the bail fund near your location.</br>
+      2) mark a contact emergency from your personal contacts to SMS in case something gets wrong.</h5>
     <p class='subInstruction'>* While you can choose to store one or the other, please make sure to store this information
       before you get out to protest, to best protect you and your contacts.</p>
     <button class="start">Got it</button>
@@ -56,7 +56,6 @@
       <input type="text" class="search" placeholder="Type City or State">
     </form>
     <div class="suggestions"></div>
-    <!-- <button class="next">next</button> -->
   </div>
 
   <div class='thirdPage'>
@@ -69,10 +68,14 @@
   </div>
 
   <div class='finalPage'>
-    <button class="next">Call Bail Fund</button>
+    <div class='bailDiv'>
+    <button class="callBail">Call Bail Fund</button>
     <p class='storedData'>The bail fund info:</p>
-    <button class="next">SMS Emergency Contact</button>
+  </div>
+  <div class='smsDiv'>
+    <button class="SMS">SMS Emergency Contacts</button>
     <p class='msg'>Contact of massege: hey, I think I need you to check on me and contact...  </p>
+  </div>
   </div>
 
   <script>
@@ -83,7 +86,6 @@
     const download = document.querySelector('.download')
     const logo = document.querySelector('.logo');
     const thirdPage = document.querySelector('.thirdPage');
-    const next = document.querySelector('.next');
     const final = document.querySelector('.finalPage');
     const done = document.querySelector('.done');
 
@@ -102,11 +104,6 @@
     start.addEventListener('click', function () {
       firstPage.style.display = "none";
       secondPage.style.display = "block";
-    })
-
-    next.addEventListener('click', function () {
-      secondPage.style.display = "none";
-      thirdPage.style.display = "block";
     })
 
     done.addEventListener('click', function () {
