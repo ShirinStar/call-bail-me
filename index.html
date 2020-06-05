@@ -8,6 +8,7 @@
   <meta name="theme-color" content="#db5945">
   <title>callbail.me</title>
   <link rel="stylesheet" href="style.css">
+
   <script defer src="matchJson.js"></script>
   <script type="application/javascript" defer>
     if ('serviceWorker' in navigator) {
@@ -22,15 +23,14 @@
     }
   </script>
 </head>
-
 <body>
 
   <div class="homePage">
     <h1 class="call">CALL</h1>
     <h1 class="bail">BAIL</h1>
     <h1 class="me">ME</h1>
-    <p class='homeInstruction' >to work best in real time</p>
-    <button class="download">Install locally</button>
+    <p class='homeInstruction' >to work best in real time please-></p>
+    <button class="download">Install Locally</button>
   </div>
 
 
@@ -42,7 +42,7 @@
     <h4 class='instruction'> You will be able to SMS with detailed information of your last location and time saw, or
       make a quick call with the click of a button. </h4>
     <h5 class="secInstruction">You need to: </br>
-      1) find the bail fund neer you by location.
+      1) find the bail fund neer you by location.</br>
       2) mark a contact emergency from your personal contacts you would like to SMS if something gets wrong.</h5>
     <p class='subInstruction'>* While you can choose to store one or the other, please make sure to store this information
       before you get out to protest, to best protect you and your contacts.</p>
@@ -50,23 +50,28 @@
   </div>
  
   <div class='secondPage'>
-    <button class="">next</button>
     <form class="search-form">
-      
-      <input type="text" class="search" placeholder="City or State">
+      <p class="step">Step one</p>
+      <input type="text" class="search" placeholder="Type City or State">
     </form>
     <div class="suggestions"></div>
+    <button class="next">next</button>
   </div>
 
-
   <div class='thirdPage'>
-    <button class="">next</button>
     <form class="search-form">
-
-      <input type="text" class="search" placeholder="City or State">
-      <input type="text" class="contactSearch" placeholder="Emergency contact">
+      <p class="step">Step two</p>
+      <input type="text" class="contactSearch" placeholder="Select Emergency contact">
     </form>
     <div class="contactSuggestions"></div>
+    <button class="done">Done</button>
+  </div>
+
+  <div class='finalPage'>
+    <button class="next">Call Bail Fund</button>
+    <p class='storedData'>The bail fund info:</p>
+    <button class="next">SMS Emergency Contact</button>
+    <p class='msg'>Contact of massege: hey, I think I need you to check on me and contact...  </p>
   </div>
 
   <script>
@@ -76,21 +81,52 @@
     const homePage = document.querySelector('.homePage');
     const download = document.querySelector('.download')
     const logo = document.querySelector('.logo');
+    const thirdPage = document.querySelector('.thirdPage');
+    const next = document.querySelector('.next');
+    const final = document.querySelector('.finalPage');
+    const done = document.querySelector('.done');
 
     firstPage.style.display = "none";
     secondPage.style.display = "none";
     logo.style.display = "none";
+    thirdPage.style.display = "none";
+    final.style.display = "none";
 
     download.addEventListener('click', function () {
       firstPage.style.display = "block";
       logo.style.display = "block";
       secondPage.style.display = "none";
       homePage.style.display = "none";
+      thirdPage.style.display = "none";
     })
 
     start.addEventListener('click', function () {
       firstPage.style.display = "none";
+      homePage.style.display = "none";
       secondPage.style.display = "block";
+      thirdPage.style.display = "none";
+    })
+
+    start.addEventListener('click', function () {
+      firstPage.style.display = "none";
+      homePage.style.display = "none";
+      secondPage.style.display = "block";
+      thirdPage.style.display = "none";
+    })
+
+    next.addEventListener('click', function () {
+      firstPage.style.display = "none";
+      homePage.style.display = "none";
+      secondPage.style.display = "none";
+      thirdPage.style.display = "block";
+    })
+
+    done.addEventListener('click', function () {
+      firstPage.style.display = "none";
+      homePage.style.display = "none";
+      secondPage.style.display = "none";
+      thirdPage.style.display = "none";
+      final.style.display = "block";
     })
 
   </script>

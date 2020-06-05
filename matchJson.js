@@ -25,8 +25,8 @@ function displayMatches() {
     const stateName = fund.state.replace(regex, `<span class="hl">${this.value}</span>`)
     return `
     <p class='listResults'>
-      <span class='name'>${cityName}, ${stateName}</span>
-      <span class='name'>${fund.name}</span>
+      <span class='name'>${cityName}, ${stateName},</br> </span>
+      <span class='name'>${fund.name}: </span>
       <a class='phone' href="${fund.number}">${fund.number}</a>
     </p>
     `
