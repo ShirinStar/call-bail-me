@@ -2,10 +2,25 @@
 <html lang="en">
 
 <head>
+  <link rel="manifest" href="manifest.json">
+  <meta name="viewport" content="width=device-width" />
   <meta charset="UTF-8">
+  <meta name="theme-color" content="#db5945">
   <title>callbail.me</title>
   <link rel="stylesheet" href="style.css">
   <script defer src="matchJson.js"></script>
+  <script type="application/javascript" defer>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(function(registration) {
+          console.log('Registration successful, scope is:', registration.scope);
+        })
+        .catch(function(error) {
+          console.log('Service worker registration failed, error:', error);
+
+        });
+    }
+  </script>
 </head>
 
 <body>
