@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "state": "Alabama",
     "city": "Montgomery",
     "name": "The Montgomery Bail Out",
@@ -7,6 +8,7 @@
     "url": "https://www.mgmbailout.com/new-page"
   },
   {
+    "id": 2,
     "state": "Arizona",
     "city": "Tucson",
     "name": "Tucson Second Chance Community Bail Fund",
@@ -14,6 +16,7 @@
     "url": "https://watchtucson.com/"
   },
   {
+    "id": 3,
     "state": "Arizona",
     "city": "Tucson",
     "name": "Bond Fund for Immigrants",
@@ -21,6 +24,7 @@
     "url": "https://www.pmm.life/MAC-updates"
   },
   {
+    "id": 4,
     "state": "Arizona",
     "city": "Phoenix",
     "name": "Black People’s Justice Fund",
@@ -28,6 +32,7 @@
     "url": "https://secure.everyaction.com/lFZFGA1BpUa9kyYYgSxSKw2?fbclid=IwAR3YvwJy2ZFuGfVk0BL1rWX8UYOOx2Mbv8NVEV4MjlEXCSHDv-lx8l1H6IM"
   },
   {
+    "id": 5,
     "state": "Colorado",
     "city": "Denver",
     "name": "Colorado Freedom Fund",
@@ -35,6 +40,7 @@
     "url": "http://www.blackbailout.org/"
   },
   {
+    "id": 6,
     "state": "California",
     "city": "Costa Mesa",
     "name": "Orange County Bail Fund",
@@ -42,6 +48,7 @@
     "url": "https://ocjusticefund.org/"
   },
   {
+    "id": 7,
     "state": "California",
     "city": "San Francisco",
     "name": "Freedom for immigrants",
@@ -49,6 +56,7 @@
     "url": "https://www.freedomforimmigrants.org/contact-us-2"
   },
   {
+    "id": 8,
     "state": "California",
     "city": "San Francisco",
     "name": "The San Francisco Bay Area NLG",
@@ -56,6 +64,7 @@
     "url": "https://nlgsf.org/"
   },
   {
+    "id": 9,
     "state": "California",
     "city": "Los Angeles",
     "name": "Compton Bail Project",
@@ -63,6 +72,7 @@
     "url": "https://bailproject.org/"
   },
   {
+    "id": 10,
     "state": "California",
     "city": "Oakland",
     "name": "Bail Support from Hella Black Pod",
@@ -70,6 +80,7 @@
     "url": "https://www.hellablackpod.com/"
   },
   {
+    "id": 11,
     "state": "California",
     "city": "Sacramento",
     "name": "Sacramento Bail Fund",
@@ -77,6 +88,7 @@
     "url": "https://www.norcalresist.org/"
   },
   {
+    "id": 12,
     "state": "Connecticut",
     "city": "New Haven",
     "name": "Connecticut Bail Fund",
@@ -84,6 +96,7 @@
     "url": "http://www.ctbailfund.org/contact"
   },
   {
+    "id": 13,
     "state": "Delaware",
     "city": "Wilmington",
     "name": "FNB Bail Fund",
@@ -91,6 +104,7 @@
     "url": "https://twitter.com/FnbWilmington"
   },
   {
+    "id": 14,
     "state": "D.C",
     "city": "Washington",
     "name": "Legal Aid Society",
@@ -98,6 +112,7 @@
     "url": "https://www.legalaiddc.org/"
   },
   {
+    "id": 15,
     "state": "Kentucky",
     "city": "Lexington",
     "name": "Lexington Bail Fund",
@@ -105,6 +120,7 @@
     "url": "https://lexingtonbail.governmentwindow.com/bail.html"
   },
   {
+    "id": 16,
     "state": "Florida",
     "city": "Miami",
     "name": "FemPower Bail Fund",
@@ -112,6 +128,7 @@
     "url": "https://linktr.ee/MiamiDreamDefenders"
   },
   {
+    "id": 17,
     "state": "Florida",
     "city": "Jacksonville",
     "name": "The Community Foundation for Northeast Florida",
@@ -119,6 +136,7 @@
     "url": "https://www.jaxcf.org/"
   },
   {
+    "id": 18,
     "state": "Florida",
     "city": "Tallahassee",
     "name": "Tallahassee Bail Fund",
@@ -126,6 +144,7 @@
     "url": "https://hrcalachua.com/contact/"
   },
   {
+    "id": 19,
     "state": "Georgia",
     "city": "Athens",
     "name": "Georgia Immigration Bond Fund",
@@ -133,6 +152,7 @@
     "url": "https://www.actionbail.com/locations/immigration-bail-bonds-georgia"
   },
   {
+    "id": 20,
     "state": "Georgia",
     "city": "Athens",
     "name": "TAthens Anti-Discrimination Movement",
@@ -140,6 +160,7 @@
     "url": "hhttps://www.aadmovement.org/"
   },
   {
+    "id": 21,
     "state": "Illinois",
     "city": "Chicago",
     "name": "Chicago Community Bond Fund",
@@ -147,6 +168,7 @@
     "url": "https://chicagobond.org/about-us#contact"
   },
   {
+    "id": 22,
     "state": "Illinois",
     "city": "Urbana",
     "name": "Champaign County Bailout Coalition",
@@ -154,6 +176,7 @@
     "url": "https://champaigncountybailoutcoalition.wordpress.com/contact/"
   },
   {
+    "id": 23,
     "state": "Indiana",
     "city": "Indianapolis",
     "name": "The bail project",
@@ -161,6 +184,7 @@
     "url": "https://bailproject.org/our-work/"
   },
   {
+    "id": 24,
     "state": "Iowa",
     "city": "Postville",
     "name": "Eastern Iowa Community Bond Project",
@@ -168,6 +192,7 @@
     "url": "https://communitybondproject.org/"
   },
   {
+    "id": 25,
     "state": "Louisiana",
     "city": "Baton Roug",
     "name": "YWCA Greater Baton Rouge Community Bail Fund",
@@ -175,6 +200,7 @@
     "url": "https://www.ywca-br.org/contact-us-1"
   },
   {
+    "id": 26,
     "state": "Missouri",
     "city": "Kansas City",
     "name": "Kansas City Community Bail Fund",
@@ -182,6 +208,7 @@
     "url": "https://www.kccommunitybailfund.com/"
   },
   {
+    "id": 27,
     "state": "Missouri",
     "city": "Kansas City",
     "name": "Missouri Black Protester Relief Fund - contact via website and look for support on ground.",
@@ -189,6 +216,7 @@
     "url": "https://actionnetwork.org/"
   },
   {
+    "id": 28,
     "state": "Minnesota",
     "city": "Minneapolis",
     "name": "Centro de Trabajadores Unidos en La Lucha",
@@ -196,6 +224,7 @@
     "url": "https://ctul.net/"
   },
   {
+    "id": 29,
     "state": "Minnesota",
     "city": "Minneapolis",
     "name": "Minneapolis Freedom Fund",
@@ -203,6 +232,7 @@
     "url": "https://minnesotafreedomfund.org/bailbond-referral"
   },
   {
+    "id": 30,
     "state": "Maryland",
     "city": "Baltimore",
     "name": "Baltimore Action Legal Team's Bail Fund",
@@ -210,6 +240,7 @@
     "url": "https://www.baltimoreactionlegal.org/contact"
   },
   {
+    "id": 31,
     "state": "Michigan",
     "city": "Detroit",
     "name": "Detroit Justice Center",
@@ -217,6 +248,7 @@
     "url": "https://www.detroitjustice.org/contact-us"
   },
   {
+    "id": 32,
     "state": "Michigan",
     "city": "Detroit",
     "name": "The Bail Project",
@@ -224,6 +256,7 @@
     "url": "https://bailproject.org/our-work/"
   },
   {
+    "id": 33,
     "state": "Massachusetts",
     "city": "Boston",
     "name": "Beyond Bail & Legal Defense Fund",
@@ -231,6 +264,7 @@
     "url": "https://www.beyondbondboston.org/"
   },
   {
+    "id": 34,
     "state": "Massachusetts",
     "city": "Boston",
     "name": "Massachusetts Bail Fund",
@@ -238,6 +272,7 @@
     "url": "https://www.massbailfund.org/"
   },
   {
+    "id": 35,
     "state": "New York",
     "city": "Brooklyn",
     "name": "Brooklyn Community Bail Fund",
@@ -245,6 +280,7 @@
     "url": "https://brooklynbailfund.org/contact"
   },
   {
+    "id": 36,
     "state": "New York",
     "city": "The Bronx",
     "name": "The Bronx Freedom Fund",
@@ -252,6 +288,7 @@
     "url": "http://www.thebronxfreedomfund.org/"
   },
   {
+    "id": 37,
     "state": "New York",
     "city": "New York City",
     "name": "Trans Emergency Release Fund",
@@ -259,6 +296,7 @@
     "url": "https://emergencyreleasefund.com/"
   },
   {
+    "id": 38,
     "state": "North Carolina",
     "city": "Durham",
     "name": "North Carolina Community Bail Fund",
@@ -266,6 +304,7 @@
     "url": "https://www.nccbailfund.org/"
   },
   {
+    "id": 39,
     "state": "North Carolina",
     "city": "Charlotte",
     "name": "Charlotte Bail Support",
@@ -273,13 +312,7 @@
     "url": "https://charlottebailbonds.us/"
   },
   {
-    "state": "Louisiana",
-    "city": "New Orleans",
-    "name": "New Orleans Freedom Fund",
-    "number": null,
-    "url": null
-  },
-  {
+    "id": 40,
     "state": "Ohaio",
     "city": "Cincinnati",
     "name": "Cincinnati Bail Fund",
@@ -287,6 +320,7 @@
     "url": "https://www.courtclerk.org/frequently-asked-questions-bond-information/"
   },
   {
+    "id": 41,
     "state": "Oregon",
     "city": "Eugene",
     "name": "Eugene Bail fund",
@@ -294,6 +328,7 @@
     "url": null
   },
   {
+    "id": 42,
     "state": "Oregon",
     "city": "Portland",
     "name": "PDX Protest Bail Fund",
@@ -301,6 +336,7 @@
     "url": null
   },
   {
+    "id": 43,
     "state": "Pennsylvania",
     "city": "Pittsburg",
     "name": "Bukit Bail Fund of Pittsburgh",
@@ -308,6 +344,7 @@
     "url": "https://www.bukitbailfund.org/"
   },
   {
+    "id": 44,
     "state": "Pennsylvania",
     "city": "Philadelphia",
     "name": "Philadelphia Bail Fund",
@@ -315,6 +352,7 @@
     "url": "https://www.phillybailfund.org/contact-us"
   },
   {
+    "id": 45,
     "state": "Tennessee",
     "city": "Nashville",
     "name": "Nashville Community Bail Fund",
@@ -322,6 +360,7 @@
     "url": "https://nashvillebailfund.org/"
   },
   {
+    "id": 46,
     "state": "Tennessee",
     "city": "Memphis",
     "name": "Just city",
@@ -329,6 +368,7 @@
     "url": "https://justcity.org/what-we-do/mcbfund/"
   },
   {
+    "id": 47,
     "state": "Texas",
     "city": "Houston",
     "name": "Community Bail Fund",
@@ -336,6 +376,7 @@
     "url": "https://www.restoringjustice.org/about"
   },
   {
+    "id": 48,
     "state": "Texas",
     "city": "Dallas",
     "name": "The Luke 4:18 Bail Fund by Faith",
@@ -343,6 +384,7 @@
     "url": "https://faithintx.org/bailfund/"
   },
   {
+    "id": 49,
     "state": "Texas",
     "city": "Dallas",
     "name": "Dallas Bail Fund for Protesters",
@@ -350,6 +392,7 @@
     "url": null
   },
   {
+    "id": 50,
     "state": "Virginia",
     "city": "Richmond",
     "name": "Richmond Community Bail Fund",
@@ -357,6 +400,7 @@
     "url": "https://rvabailfund.org/contact"
   },
   {
+    "id": 51,
     "state": "Virginia",
     "city": "Roanoke",
     "name": "Roanoke Community Bail Fund",
@@ -364,6 +408,7 @@
     "url": "https://roanokepeoplespower.wordpress.com/roanoke-community-bail-fund/"
   },
   {
+    "id": 52,
     "state": "Washington",
     "city": "Seattle",
     "name": "The Northwest Community Bail Fund",
@@ -371,6 +416,7 @@
     "url":"https://www.nwcombailfund.org/contact/"
   },
   {
+    "id": 53,
     "state": "Washington",
     "city": "Seattle",
     "name": "The BLM Seattle Freedom Fund",
@@ -378,6 +424,7 @@
     "url":"https://blacklivesseattle.org/bail-fund/"
   },
   {
+    "id": 54,
     "state": "Washington",
     "city": "Burien",
     "name": "Fair Fight Immigrant Bond Fund ",
