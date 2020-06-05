@@ -200,9 +200,14 @@ input.contactSearch {
   width: 250px;
 }
 
-span.number {
+.listResults {
+
+}
+
+a.number {
   font-size: 16px;
   color: white;
+  text-decoration: none;
 }
 
 span.site {

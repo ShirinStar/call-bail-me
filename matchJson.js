@@ -3,30 +3,31 @@ async function loadJSON (url) {
   return await res.json();
 }
 
-const cities = [];
+const funds = [];
 
 loadJSON('./phones.json')
-.then(data => cities.push(...data))
+.then(data => funds.push(...data))
 .catch(err => console.error(err));
 
-function findMatches(wordToMatch, cities) {
-  return cities.filter(place => {
+function findMatches(wordToMatch, funds) {
+  return funds.filter(fund => {
     const regex = new RegExp(wordToMatch, 'gi');
-    return place.city.match(regex) || place.state.match(regex)
+    return fund.city.match(regex) || fund.state.match(regex)
   })
 }
 
 function displayMatches() {
-  const matchArray = findMatches(this.value, cities);
+  const matchArray = findMatches(this.value, funds);
   console.log(matchArray)
-  const html = matchArray.map(place => {
+  const html = matchArray.map(fund => {
     const regex = new RegExp(this.value, 'gi');
-    const cityName = place.city.replace(regex, `<span class="hl">${this.value}</span>`)
-    const stateName = place.state.replace(regex, `<span class="hl">${this.value}</span>`)
+    const cityName = fund.city.replace(regex, `<span class="hl">${this.value}</span>`)
+    const stateName = fund.state.replace(regex, `<span class="hl">${this.value}</span>`)
     return `
-    <p>
+    <p class='listResults'>
       <span class='name'>${cityName}, ${stateName}</span>
-      <span class='phone'>${place.number}</span>
+      <span class='name'>${fund.name}</span>
+      <a class='phone' href="${fund.number}">${fund.number}</a>
     </p>
     `
   }).join('');
