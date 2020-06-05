@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>callbail.me</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="matchJson.js"></script>
+</head>
+
+<body>
+
+  <div class="homePage">
+    <h1 class="call">CALL</h1>
+    <h1 class="bail">BAIL</h1>
+    <h1 class="me">ME</h1>
+    <p class='homeInstruction' >to work best in real time</p>
+    <button class="download">Install locally</button>
+  </div>
+
+
+  <h1 class="logo">CALLBAIL.ME</h1>
+
+  <div class=firstPage>
+    <h4 class='instruction'> Callbail.me allows to store emergency contacts and local bail funds, to notify them in
+      case of a need.</h4>
+    <h4 class='instruction'> You will be able to SMS with detailed information of your last location and time saw, or
+      make a quick call with the click of a button. </h4>
+    <h5 class="secInstruction">You need to: </br>
+      1) find the bail fund neer you by location.
+      2) mark a contact emergency from your personal contacts you would like to SMS if something gets wrong.</h5>
+    <p class='subInstruction'>* While you can choose to store one or the other, please make sure to store this information
+      before you get out to protest, to best protect you and your contacts.</p>
+    <button class="start">Got it</button>
+  </div>
+ 
+  <div class=secondPage>
+    <button class="">done</button>
+    <form class="search-form">
+      <h2 class="step"> 1)</h2>
+      <input type="text" class="search" placeholder="City or State">
+      <h2 class="step"> 2)</h2>
+      <input type="text" class="contactSearch" placeholder="Emergency contact">
+    </form>
+    <div class="suggestions"></div>
+    <div class="contactSuggestions"></div>
+  </div>
+
+
+  <script>
+    const firstPage = document.querySelector('.firstPage');
+    const secondPage = document.querySelector('.secondPage');
+    const start = document.querySelector('.start');
+    const homePage = document.querySelector('.homePage');
+    const download = document.querySelector('.download')
+    const logo = document.querySelector('.logo');
+
+    firstPage.style.display = "none";
+    secondPage.style.display = "none";
+    logo.style.display = "none";
+
+    download.addEventListener('click', function () {
+      firstPage.style.display = "block";
+      logo.style.display = "block";
+      secondPage.style.display = "none";
+      homePage.style.display = "none";
+    })
+
+    start.addEventListener('click', function () {
+      firstPage.style.display = "none";
+      secondPage.style.display = "block";
+    })
+
+  </script>
+
+</body>
+
+</html>
