@@ -2,7 +2,7 @@ async function loadJSON (url) {
   const res = await fetch(url);
   return await res.json();
 }
-
+let selectedFund = null;
 const funds = [];
 
 loadJSON('./phones.json')
@@ -16,9 +16,8 @@ function findMatches(wordToMatch, funds) {
   })
 }
 
-function displayMatches() {
+function displayMatches(e) {
   const matchArray = findMatches(this.value, funds);
-  console.log(matchArray)
   const html = matchArray.map(fund => {
     const regex = new RegExp(this.value, 'gi');
     const cityName = fund.city.replace(regex, `<span class="hl">${this.value}</span>`)
@@ -28,15 +27,26 @@ function displayMatches() {
       <span class='name'>${cityName}, ${stateName}</span>
       <span class='name'>${fund.name}</span>
       <a class='phone' href="${fund.number}">${fund.number}</a>
+      <button value="${fund.id}">Click to Select this Fund</button>
     </p>
     `
   }).join('');
+
   suggestions.innerHTML = html;
+
 }
 
 const search = document.querySelector('.search')
 const suggestions = document.querySelector('.suggestions');
-
-search.addEventListener("change", displayMatches);
-search.addEventListener("keyup", displayMatches);
-
+suggestions.addEventListener('click', e => {
+  if (e.target.tagName == 'BUTTON') {
+    const id = parseInt(e.target.value);
+    const fund = funds.find(currentFund => currentFund.id === id);
+    handleFundSelection(fund);
+  }
+})
+function handleFundSelection(fund) {
+  selectedFund = fund.id;
+  console.log('the selected fund is: ', fund.id);
+}
+search.addEventListener("input", displayMatches);
