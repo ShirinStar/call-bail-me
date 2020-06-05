@@ -76,6 +76,7 @@
     <button class="SMS">SMS Emergency Contacts</button>
     <p class='msg'>Contact of massege: hey, I think I need you to check on me and contact...  </p>
   </div>
+    <p class="sent">Meassege sent! stay safe!</p>
   </div>
 
   <script>
@@ -88,12 +89,15 @@
     const thirdPage = document.querySelector('.thirdPage');
     const final = document.querySelector('.finalPage');
     const done = document.querySelector('.done');
+    const sent = document.querySelector('.sent')
+    const SMSbtn = document.querySelector('.SMS')
 
     firstPage.style.display = "none";
     secondPage.style.display = "none";
     logo.style.display = "none";
     thirdPage.style.display = "none";
     final.style.display = "none";
+    sent.style.display = "none";
 
     download.addEventListener('click', function () {
       firstPage.style.display = "block";
@@ -109,6 +113,11 @@
     done.addEventListener('click', function () {
       thirdPage.style.display = "none";
       final.style.display = "block";
+    })
+
+    SMSbtn.addEventListener('click', function () {
+      sent.style.display = "block";
+
     })
 
   </script>
